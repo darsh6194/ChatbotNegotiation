@@ -32,10 +32,6 @@ Before you begin, ensure you have met the following requirements:
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
 
-3. Install the required packages:
-   ```
-   pip install -r requirements.txt
-   ```
 
 4. Set up your Gemini API key:
    - Go to https://makersuite.google.com/app/apikey
@@ -51,18 +47,9 @@ Before you begin, ensure you have met the following requirements:
 
 1. Start the Flask server:
    ```
-   python app.py
+   python Negotiation.py
    ```
    The server will start running on `http://localhost:5000`
-
-### Using the Command-Line Interface
-
-1. Run the command-line client:
-   ```
-   python cmd_client.py
-   ```
-   
-2. Follow the prompts to interact with the chatbot.
 
 ### Making API Requests
 
@@ -74,13 +61,6 @@ curl -X POST http://localhost:5000/negotiate \
      -d '{"message": "I am interested in buying the headphones. What is your best price?", "history": []}'
 ```
 
-## Project Structure
-
-- `app.py`: Main Flask application implementing the negotiation API
-- `cmd_client.py`: Command-line interface for interacting with the chatbot
-- `test_gemini_api.py`: Script to test the Gemini API connection
-- `requirements.txt`: List of Python dependencies
-- `.env`: Configuration file for storing the API key (not included in the repository)
 
 ## Customization
 
@@ -93,7 +73,6 @@ If you encounter any issues:
 1. Ensure your API key is correctly set in the `.env` file.
 2. Check that all dependencies are installed correctly.
 3. Verify your internet connection and access to Google's servers.
-4. Run `test_gemini_api.py` to check your API key and connection.
 
 ## Contributing
 
