@@ -1,5 +1,6 @@
 # Negotiation Chatbot
 
+This Project was Given as a assignment by SETTYL INC
 This project implements a negotiation chatbot using the Google Gemini API. The chatbot simulates a negotiation process between a customer and a supplier for a product (in this case, Premium Wireless Headphones).
 
 ## Features
